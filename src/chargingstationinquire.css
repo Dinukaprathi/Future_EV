@@ -1,0 +1,130 @@
+/* Main container */
+.main-container {
+  display: flex;
+  justify-content: space-between; /* Space between the text and the form */
+  align-items: center; /* Center items vertically */
+  gap: 5px; /* Space between text and form */
+  padding: 2rem; /* Add padding around the container */
+  margin-top: 100px;
+}
+
+/* Text container */
+.text-container {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  flex-direction: column; /* Stack text vertically */
+}
+
+/* Animated text style */
+.animated-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem; /* Increased size for h1 */
+  color: #FF6C0C; /* Your theme color */
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  /* Initial blur effect */
+  filter: blur(8px);
+  /* Unified animation duration with infinite repeat */
+  animation: slideInOut 10s ease-out infinite;
+}
+
+/* Style for h3 */
+.text-container h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem; /* Increased size for h3 */
+  color: #FFFBF5; /* Light color for h3 */
+  margin-top: 10px;
+  /* Unified animation duration with infinite repeat */
+  animation: slideInOut 10s ease-out infinite;
+  animation-delay: 1s; /* Adjusted delay for smoother flow between texts */
+}
+
+/* Form container */
+.form-container {
+  flex: 2; /* Form takes up more space than text */
+  max-width: 400px;
+  padding: 2rem;
+  background-color: rgba(40, 44, 52, 0.6); /* Semi-transparent dark background */
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin-right: 150px;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #FFFBF5; /* Light color for better visibility */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-group textarea {
+  min-height: 3rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #FF6C0C;
+  outline: #FF6C0C;
+}
+
+.submit-button {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.75rem;
+  background-color: #12195F;
+  color: #FFFBF5;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #FF6C0C;
+  color: #12195F;
+}
+
+/* Keyframes for sliding in, holding for 7 seconds, and sliding out */
+@keyframes slideInOut {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    filter: blur(8px);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(0); /* Slide in */
+    filter: blur(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(0); /* Hold the text for 7 seconds */
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%); /* Slide out to the right */
+    filter: blur(8px);
+    opacity: 0;
+  }
+}

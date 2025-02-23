@@ -1,0 +1,44 @@
+.map-container {
+    margin: 100px;
+    text-align: center;
+
+}
+
+.map {
+    height: 500px;
+    width: 100%;
+}
+
+.station-info-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+.station-info-paper {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.station-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.station-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.navigation-button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    background-color: #1976d2;
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+}

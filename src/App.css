@@ -1,0 +1,285 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: url('./img/c7.jpg') no-repeat center center fixed;
+  background-size: 100%;
+  color: #FFFBF5;
+}
+
+.App-header {
+  background-color: rgba(40, 44, 52, 0.85); 
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #FFFBF5;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 30px auto;
+  width: 90%;
+  animation: fadeInUp 2s ease-out;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%; 
+  max-width: 800px; /* Optional: Restrict width for larger screens */
+}
+
+.stat-item {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.stat-item h2 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: #FF6C0C; /* Highlight color */
+}
+
+.stat-item p {
+  font-size: 1.2em;
+  color: #FFFBF5;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.user-btn {
+  font-size: 15px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #12195F; /* Matches EVnet's theme */
+  color: #FFFBF5;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+.user-btn:hover {
+  background-color: #FF6C0C; /* Highlight on hover */
+  transform: translateY(-2px); /* Slight elevation on hover */
+}
+
+.user-btn:active {
+  transform: translateY(1px); /* Simulates button press */
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Adjust font-size for smaller screens */
+    padding: 15px;
+    width: 95%;
+  }
+
+  .user-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+.App-nav {
+  background-color: rgba(40, 44, 52, 0.6); /* Increased transparency */
+  padding: 3px 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth hide/show */
+}
+
+.App-nav.hidden {
+  transform: translateY(-100%); /* Move navbar out of view */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-top: 30px;
+  gap: 40px;
+  padding: 0;
+}
+
+.nav-item {
+  font-size: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FFFBF5; /* Matches theme */
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #FF6C0C; /* Highlight on hover */
+  color: #12195F; /* Contrast text */
+}
+
+.logo {
+  border-radius: 100px;
+  left: -40px;
+  width: 100px; /* Adjust initial size */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom effect */
+  gap: 40px;
+}
+
+.logo:hover {
+  transform: scale(1.2); /* Zoom in by 20% */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds depth */
+}
+
+.about-page {
+  background-color: rgba(0, 0, 0, 0.6); /* Slight background overlay for better text visibility */
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 50px auto;
+  color: #FFFBF5;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-page h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-page p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+.des {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  color: #FFFBF5; /* Matches your color scheme */
+  font-size: 24px;
+  text-transform: uppercase; /* Optional: All uppercase for a techy look */
+  letter-spacing: 2px; /* Adds space between letters */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 108, 12, 0.6); /* Glow effect */
+  margin: 20px 0;
+}
+/* Homepage content container */
+.homepage-content {
+  background-color: transparent; /* Make the container background transparent */
+  padding: 40px 20px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Initially apply blur and opacity */
+  filter: blur(8px); 
+  opacity: 0;
+  animation: fadeInFromBlur 1.5s ease-out forwards;
+}
+
+/* Homepage description */
+.homepage-description {
+  background-color: rgba(40, 44, 52, 0.85); /* Semi-transparent white background for the description */
+  padding: 20px;
+  border-radius: 8px; /* Optional: Rounded corners */
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+/* Title style */
+.homepage-description h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Paragraph style */
+.homepage-description p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Keyframes for the blur-to-clear transition */
+@keyframes fadeInFromBlur {
+  0% {
+    filter: blur(8px); /* Start with blur */
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0); /* End with no blur */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.app-download-section {
+  text-align: center;
+  margin: 100px;
+  background-color:rgba(40, 44, 52, 0.85);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.download-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.download-logo {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+
+.download-logo:hover {
+  transform: scale(1.1);
+}
+.feedback-text {
+  text-align: center;
+  margin: 30px;
+  font-size: 2rem;
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+}
+
+.feedback-text.visible {
+  opacity: 1;
+  filter: blur(0);
+}
+
+
+
+
+

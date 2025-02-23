@@ -1,0 +1,125 @@
+/* General Container Styling */
+.feedback-container {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1200px; /* Set maximum width for the container */
+    padding: 20px;
+    background-color: rgba(40, 44, 52, 0.85); /* Unified background */
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
+    justify-content: space-between; /* Separate the two sections */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between sections */
+    margin: 0 auto; /* Center align the container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+/* Feedback List Styling */
+.feedback-list {
+    flex: 1; /* Take up available space */
+    max-width: 50%; /* Limit maximum width */
+    min-width: 300px; /* Set a minimum width for smaller screens */
+    background-color: #ffffff; /* White background for feedback list */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for list */
+}
+
+.MuiList-root {
+    padding: 0;
+}
+
+.MuiListItem-root {
+    transition: background-color 0.2s ease-in-out;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex; /* Align items inline */
+    align-items: center;
+}
+
+.MuiListItem-root:hover {
+    background-color: #f9f9f9;
+}
+
+.MuiDivider-root {
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+/* Avatar Styling */
+.MuiListItemAvatar-root {
+    margin-right: 16px;
+}
+
+.MuiAvatar-root {
+    width: 56px;
+    height: 56px;
+    border: 2px solid #12195F; /* Matching theme color */
+}
+
+/* Typography and Text Styling */
+.MuiTypography-body2 {
+    color: #555555;
+}
+
+.MuiTypography-body2 .MuiTypography-colorTextPrimary {
+    color: #12195F;
+    font-weight: bold;
+}
+
+/* Sliding Text Section Styling */
+.sliding-text-container {
+    margin-top: 10%;
+    flex: 1; /* Take up available space */
+    max-width: 45%; /* Limit maximum width */
+    min-width: 300px; /* Set a minimum width for smaller screens */
+    background-color:transparent; /* White background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px transparent; /* Subtle shadow */
+    opacity: 0; /* Initial hidden state */
+    transform: translateX(100px); /* Slide-in effect */
+    filter: blur(10px);
+    transition: opacity 1s ease, transform 1s ease, filter 1s ease; /* Smooth transition */
+}
+
+.sliding-text-container.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Reset position */
+    filter: blur(0); /* Remove blur */
+}
+
+/* Feedback Title */
+.feedback-title {
+    font-size: 1.5rem;
+    color: #12195F;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .feedback-container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 15px;
+    }
+
+    .feedback-list,
+    .sliding-text-container {
+        max-width: 100%; /* Allow full-width on smaller screens */
+    }
+
+    .MuiAvatar-root {
+        width: 48px;
+        height: 48px;
+    }
+
+    .MuiListItem-root {
+        flex-direction: row; /* Align list items horizontally */
+        gap: 10px;
+    }
+}

@@ -1,0 +1,62 @@
+/* About Page General Styles */
+.about-us {
+    background-color: rgba(40, 44, 52, 0.85);  /* Semi-transparent dark blue */
+    color: #FFFBF5; /* White text for contrast */
+    padding: 40px 20px;
+    border-radius: 10px; /* Optional: Rounded corners for the container */
+    margin: 100px;
+  }
+  
+  .about-us-title {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for headings */
+    font-size: 2.5em;
+    color: #FF6C0C; /* Highlighted orange heading */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-description {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.8;
+    margin: 10px 0;
+  }
+  
+  /* Card Styles */
+  .about-us-card {
+    background-color: rgba(255, 255, 245, 0.9); /* Semi-transparent white background */
+    color: #12195F; /* Dark text for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(5px); /* Optional: Adds a subtle blur to the background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  }
+  
+  .about-us-card:hover {
+    transform: translateY(-10px); /* Lifts the card upwards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+    cursor: pointer; /* Changes cursor to pointer */
+  }
+  
+  
+  .card-title {
+    font-size: 1.5em;
+    color: #FF6C0C;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #555555;
+  }
+  
+  /* Media Query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .about-us-card {
+      flex: 1 1 calc(100% - 20px);
+      max-width: calc(100% - 20px);
+    }
+  }
+  

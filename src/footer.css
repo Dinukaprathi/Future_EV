@@ -1,0 +1,40 @@
+.App-footer {
+    background-color: rgba(40, 44, 52, 0.6); /* Transparent background */
+    color: #FFFBF5; /* Light text color for contrast */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Optional border for separation */
+    position: relative;
+    z-index: 10;
+  }
+  
+  .App-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .App-footer ul li a {
+    color: #FFFBF5; /* Match text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .App-footer ul li a:hover {
+    color: #FF6C0C; /* Highlight link on hover */
+  }
+  
+  .App-footer p {
+    margin: 10px 0;
+  }
+  
+  .App-footer .contact-info {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  

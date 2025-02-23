@@ -1,0 +1,22 @@
+{
+  "name": "node-express-backend",
+  "version": "1.0.0",
+  "description": "A Node.js Express backend for user sign-up and data management.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.23"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "author": "",
+  "license": "ISC"
+}

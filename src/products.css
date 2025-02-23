@@ -1,0 +1,75 @@
+/* General Container Styling */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 100px;
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  
+  /* Individual Product Card Styling */
+  .product {
+    position: relative;
+    width: 250px;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    background-color: #fff; /* White background for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Center content within cards */
+  }
+  
+  .product:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  /* Product Image Styling */
+  .product img {
+    width: 100%; /* Make the image responsive */
+    height: 400px;
+    border-bottom: 1px solid #ddd; /* Separate image from text */
+    display: block; /* Remove inline gaps */
+  }
+  
+  /* Popup (Details Section) Styling */
+  .popup {
+    padding: 15px;
+    font-size: 14px;
+    color: #333; /* Dark text for readability */
+    white-space: pre-line; /* Preserve formatting */
+    line-height: 1.6; /* Increase line spacing */
+    text-align: left; /* Left-align for better readability */
+    background-color: #f9f9f9; /* Light background for details */
+    border-top: 1px solid #eee; /* Top border for separation */
+  }
+  
+  .popup:hover {
+    background-color: #f1f1f1; /* Slight background change on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product {
+      width: 90%; /* Make cards full width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-container {
+      gap: 10px; /* Reduce gap for smaller screens */
+    }
+  
+    .product {
+      width: 100%; /* Full width for mobile screens */
+    }
+  
+    .popup {
+      font-size: 12px; /* Smaller font for mobile screens */
+    }
+  }
+  
