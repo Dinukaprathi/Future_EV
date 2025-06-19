@@ -27,6 +27,20 @@ Intuitive and clean user interface for both customers and station owners.
 🔐 Authentication:
 Secure Login and Sign-Up functionality already implemented.
 
+
+Uploading Screen Recording 2025-06-19 220515.mp4…
+
+
+https://github.com/user-attachments/assets/a76d3aac-7548-4528-ae70-f0d5e5b20258
+
+![Screenshot 2025-06-19 220615](https://github.com/user-attachments/assets/7fe579ed-ed39-4841-8db1-f631f157aaaa)
+
+![Screenshot 2025-06-19 220648](https://github.com/user-attachments/assets/0dabb174-14d5-4fbf-b890-dabe5cf2d478)
+
+
+![Screenshot 2025-06-19 220717](https://github.com/user-attachments/assets/ea395393-9db6-44fa-8336-152cf5d4d6e7)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
