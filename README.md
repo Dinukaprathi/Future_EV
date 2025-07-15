@@ -27,9 +27,7 @@ Intuitive and clean user interface for both customers and station owners.
 🔐 Authentication:
 Secure Login and Sign-Up functionality already implemented.
 
-
-Uploading Screen Recording 2025-06-19 220515.mp4…
-
+https://github.com/user-attachments/assets/15272cf2-66ab-479c-9a97-d8d9efc4a721
 
 https://github.com/user-attachments/assets/a76d3aac-7548-4528-ae70-f0d5e5b20258
 
